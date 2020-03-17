@@ -5,5 +5,5 @@ import { TtfHex, TtfCmyk } from '../../../commons/src/model/Color';
 export function convert(color: TtfHex): TtfCmyk {
     const colorToConvert: TtfHex = color;
     const convertedColor = colorConverter.hex.cmyk(colorToConvert.hex);
-    return {black: convertedColor[0], cyan: convertedColor[1], magenta: convertedColor[2], yellow: convertedColor[3]} as TtfCmyk;
+    return {cyan: convertedColor[0], magenta: convertedColor[1], yellow: convertedColor[2], black: convertedColor[3]} as TtfCmyk;
 }
